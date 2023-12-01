@@ -1,0 +1,227 @@
+
+:root{
+    --primary-color:#3a4052;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.show{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.video-container{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.content{
+    z-index:10;
+}
+
+.video-container video{
+    min-width:100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: translate(-50%,-30%);
+}
+
+
+
+h1{
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    font-size:150px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+body{
+    background-color: black;
+    color:white;  
+}
+
+h2{
+    color: white;
+   
+}
+
+audio{
+    background-color: black;
+}
+.btn{
+    color: white;
+    top: 20px;
+    left: 250px;
+    height: 500px;
+    width: 500px;
+    border: none;
+    /* background-image: url('2022img/WechatIMG126.jpeg'); */
+    background-attachment: fixed;
+    background-size: 30% 100%;
+    text-decoration: none;   
+    font-size:100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.btn2{
+    background-color: blueviolet;
+}
+
+
+
+h4{
+    color: white;
+    background-color: black;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    font-size:80px;
+    text-align:right;
+    text-emphasis: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#basketball-girl{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 600px;
+}
+
+.slider{  
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px ;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding:5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
